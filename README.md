@@ -8,6 +8,9 @@
   <br />
 </h2>
 
+## Demo
+<img src="images/demo.gif" />
+
 ## Local development
 1. First, install the dependencies:
     ```bash
