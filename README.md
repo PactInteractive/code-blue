@@ -9,6 +9,10 @@
 </h2>
 
 ## Demo
+### Before
+<img src="images/before.png" />
+
+### After
 <img src="images/demo.gif" />
 
 ## Local development
