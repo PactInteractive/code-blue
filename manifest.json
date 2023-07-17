@@ -1,0 +1,25 @@
+{
+  "name": "Code Blue",
+  "description": "Syntax highlighting for code blocks on Twitter",
+  "version": "0.1.0",
+  "manifest_version": 3,
+  "icons": {
+    "16": "/images/icon_16.png",
+    "48": "/images/icon_48.png",
+    "128": "/images/icon_128.png"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://*.twitter.com/*"
+      ],
+      "css": [
+        "lib/prism.css"
+      ],
+      "js": [
+        "lib/prism.js",
+        "src/highlightCodeBlocks.js"
+      ]
+    }
+  ]
+}

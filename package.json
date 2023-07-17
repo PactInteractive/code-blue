@@ -1,0 +1,18 @@
+{
+  "private": true,
+  "name": "code-blue",
+  "version": "0.1.0",
+  "license": "MIT",
+  "scripts": {
+    "start": "npm run build && node scripts/watch.js",
+    "build": "node scripts/build.js",
+    "task": "node scripts/task.js"
+  },
+  "devDependencies": {
+    "@types/chrome": "0.0.122",
+    "fs-extra": "9.0.1",
+    "glob": "7.1.6",
+    "glob-watcher": "5.0.5",
+    "prettier": "2.0.5"
+  }
+}
