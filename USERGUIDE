@@ -1,0 +1,20 @@
+🐦‍⬛ Code Blue
+━━━━━━━━━━
+
+Grabs blocks of inline code on Twitter like:
+
+```js
+function sayHello(name) {
+  console.log(`Hello, ${name}!`);
+}
+
+sayHello('World');
+```
+
+```rust
+fn main() {
+  println!("Hello, World!");
+}
+```
+
+and highlights them with the appropriate language.
