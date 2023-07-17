@@ -5,20 +5,35 @@ window.Prism.manual = true;
 const codeTicks = '```';
 const codeLanguage = '\\w+';
 const newlinesAfterCodeBlockOpen = '\\n*';
+const latex = 'latex';
+const formulaMatch = '\\n*([^]+?)\\n*';
 const tweetSelector = '[data-testid="tweetText"]';
 
 function highlightCodeBlocks(/** @type {Element} */ tweet) {
   const codeBlocks = tweet.textContent.match(
     new RegExp(codeTicks + codeLanguage, 'g')
   );
-  codeBlocks.forEach((codeBlock) => {
+  codeBlocks?.forEach((codeBlock) => {
     const language = codeBlock.replace(codeTicks, '');
-    tweet.innerHTML = tweet.innerHTML
-      .replace(
-        new RegExp(codeBlock + newlinesAfterCodeBlockOpen),
-        `<pre><code class="language-${language}">`
-      )
-      .replace(codeTicks, `</code></pre>`);
+    const formula =
+      language === latex &&
+      tweet.textContent.match(
+        new RegExp(codeBlock + formulaMatch + codeTicks)
+      )?.[1];
+
+    if (formula) {
+      tweet.innerHTML = tweet.innerHTML.replace(
+        new RegExp(codeBlock + formulaMatch + codeTicks),
+        katex.renderToString(formula, { throwOnError: false })
+      );
+    } else {
+      tweet.innerHTML = tweet.innerHTML
+        .replace(
+          new RegExp(codeBlock + newlinesAfterCodeBlockOpen),
+          `<pre><code class="language-${language}">`
+        )
+        .replace(codeTicks, `</code></pre>`);
+    }
   });
 }
 

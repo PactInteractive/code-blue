@@ -1,13 +1,12 @@
 🐦‍⬛ Code Blue
 ━━━━━━━━━━
 
-Grabs blocks of inline code on Twitter like:
+Renders blocks of inline code on Twitter like:
 
 ```js
 function sayHello(name) {
   console.log(`Hello, ${name}!`);
 }
-
 sayHello('World');
 ```
 
@@ -17,4 +16,14 @@ fn main() {
 }
 ```
 
-and highlights them with the appropriate language.
+```latex
+c = \pm\sqrt{a^2 + b^2}
+```
+
+📝 Change Log
+━━━━━━━
+0.2.0:
+- Render LaTeX with https://github.com/KaTeX/KaTeX
+
+0.1.0:
+- Render code blocks with https://github.com/PrismJS/prism

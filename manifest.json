@@ -1,7 +1,7 @@
 {
   "name": "Code Blue",
   "description": "Syntax highlighting for code blocks on Twitter",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "manifest_version": 3,
   "icons": {
     "16": "/images/icon_16.png",
@@ -14,9 +14,11 @@
         "https://*.twitter.com/*"
       ],
       "css": [
+        "lib/katex.css",
         "lib/prism.css"
       ],
       "js": [
+        "lib/katex.js",
         "lib/prism.js",
         "src/highlightCodeBlocks.js"
       ]
