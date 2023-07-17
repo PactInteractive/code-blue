@@ -5,7 +5,7 @@ const manifestPath = './manifest.json';
 module.exports = {
   filesToCopy: [
     manifestPath,
-    './images/**/*',
+    './images/**/icon_*.png',
     './lib/**/*',
     './src/**/!(test.ts|*.test.ts)',
     './stylesheets/**/*',
