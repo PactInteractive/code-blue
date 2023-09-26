@@ -1,7 +1,7 @@
 🐦‍⬛ Code Blue
 ━━━━━━━━━━
 
-Renders blocks of inline code on Twitter like:
+Renders blocks of inline code on X/Twitter like:
 
 ```js
 function sayHello(name) {
@@ -22,6 +22,9 @@ c = \pm\sqrt{a^2 + b^2}
 
 📝 Change Log
 ━━━━━━━
+0.2.1:
+- Add support for the x.com domain
+
 0.2.0:
 - Render LaTeX with https://github.com/KaTeX/KaTeX
 

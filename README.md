@@ -3,7 +3,7 @@
 </h1>
 
 <h2 align="center">
-  Syntax highlighting for code blocks on Twitter
+  Syntax highlighting for code blocks on X/Twitter
   <br />
   <br />
 </h2>

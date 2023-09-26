@@ -1,7 +1,7 @@
 {
   "name": "Code Blue",
-  "description": "Syntax highlighting for code blocks on Twitter",
-  "version": "0.2.0",
+  "description": "Syntax highlighting for code blocks on X/Twitter",
+  "version": "0.2.1",
   "manifest_version": 3,
   "icons": {
     "16": "/images/icon_16.png",
@@ -11,6 +11,7 @@
   "content_scripts": [
     {
       "matches": [
+        "https://*.x.com/*",
         "https://*.twitter.com/*"
       ],
       "css": [
