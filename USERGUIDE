@@ -1,7 +1,7 @@
 🐦‍⬛ Code Blue
 ━━━━━━━━━━
 
-Renders blocks of inline code on X/Twitter like:
+Renders blocks of inline code on X.com like:
 
 ```js
 function sayHello(name) {

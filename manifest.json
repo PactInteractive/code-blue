@@ -1,6 +1,6 @@
 {
   "name": "Code Blue",
-  "description": "Syntax highlighting for code blocks on X/Twitter",
+  "description": "Syntax highlighting for code blocks on X.com",
   "version": "0.2.1",
   "manifest_version": 3,
   "icons": {
@@ -11,8 +11,7 @@
   "content_scripts": [
     {
       "matches": [
-        "https://*.x.com/*",
-        "https://*.twitter.com/*"
+        "https://*.x.com/*"
       ],
       "css": [
         "lib/katex.css",
