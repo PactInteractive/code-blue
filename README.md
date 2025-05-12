@@ -9,11 +9,9 @@
 </h2>
 
 ## Demo
-### Before
-<img src="images/before.png" />
-
-### After
-<img src="images/demo.gif" />
+| Before | After |
+| ------ | ----- |
+| ![Before](images/before.png) | ![After](images/demo.gif) |
 
 ## Local development
 1. First, install the dependencies:
